@@ -1,4 +1,3 @@
-import { Header } from "@/components/header";
 import type { Metadata } from "next";
 import { Epilogue } from "next/font/google";
 import "./globals.css";
@@ -20,10 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={epilogue.className}>
-        <Header />
-        {children}
-      </body>
+      <body className={epilogue.className}>{children}</body>
     </html>
   );
 }
